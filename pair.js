@@ -17,12 +17,10 @@ function lovePercentage(name1, name2) {
     return percentage;
 }
 
-// Example usage
-const name1 = document.getElementById("he").value;
-const name2 = document.getElementById("she").value;
-   document.getElementById("btn").onclick = function() {
-    let result2 = `Love Percentage between Alice and Bob is: ${lovePercentage("name1", "name2")}%`;
-
-// Test with other names
-console.log(`Love Percentage between Alice and Bob is: ${lovePercentage("Alice", "Bob")}%`);
-console.log(`Love Percentage between Jack and Jill is: ${lovePercentage("Jack", "Jill")}%`);
+// Event handler for the button
+document.getElementById("btn").onclick = function() {
+    const name1 = document.getElementById("he").value;
+    const name2 = document.getElementById("she").value;
+    const result2 = `Love Percentage between ${name1} and ${name2} is: ${lovePercentage(name1, name2)}%`;
+    document.getElementById("result").innerText = result2; // Display the result in a DOM element
+};

@@ -20,9 +20,8 @@ function lovePercentage(name1, name2) {
 // Example usage
 const name1 = document.getElementById("he").value;
 const name2 = document.getElementById("she").value;
-    let result2 = "The love percentage of " + "<span class='person'>" + he + "</span>" + " and " + "<span class='person'>" + she + "</span>" + " is : " + "<span class='hero'>" + percent + "</span>" + "%";
-    // let result2 = "hello world"
-    document.getElementById("result").innerHTML = result2;
+   document.getElementById("btn").onclick = function() {
+    let result2 = `Love Percentage between Alice and Bob is: ${lovePercentage("name1", "name2")}%`;
 
 // Test with other names
 console.log(`Love Percentage between Alice and Bob is: ${lovePercentage("Alice", "Bob")}%`);

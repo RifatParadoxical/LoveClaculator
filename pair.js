@@ -1,6 +1,6 @@
 document.getElementById("btn").onclick = function() {
     let a = Math.random();
-    let percent = Math.trunc(a * 100);
+    let percent = Math.trunc(a * 100)+1;
     let he = document.getElementById("he").value;
     let she = document.getElementById("she").value;
     let result2 = "The love percentage of " + "<span class='person'>" + he + "</span>" + " and " + "<span class='person'>" + she + "</span>" + " is : " + "<span class='hero'>" + percent + "</span>" + "%";
